@@ -30,7 +30,7 @@
       "name": "[parameters('vmSSName')]",
       "location": "[resourceGroup().location]",
       "sku": {
-        "name": "Standard_A1",
+        "name": "Standard_B2s",
         "tier": "Standard",
         "capacity": "[parameters('instanceCount')]"
       },
@@ -49,7 +49,7 @@
             "imageReference": {
               "publisher": "MicrosoftWindowsServer",
               "offer": "WindowsServer",
-              "sku": "2012-R2-Datacenter",
+              "sku": "2016-Datacenter",
               "version": "latest"
             }
           },
